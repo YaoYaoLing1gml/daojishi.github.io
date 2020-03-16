@@ -1,0 +1,86 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>考研倒计时2021</title>
+	<meta name="Keywords" content="考研倒计时2021,考研倒计时日历,距离2021年研究生考试还有多少天,2021年考研是什么时候">
+	<meta name="Description" content="万年历（wannianli.tianqi.com）为您提供距离考研倒计时，精准的考研倒计时计算器告诉您距离2021年考研还有多少天，2021年研究生考试是什么时候！">
+	<script type="text/javascript" src="/Public/Wnl/js/jquery-1.js"></script>
+	<script type="text/javascript" language="javascript" src="/Public/Home/js/common_judge.js"></script>
+	<script type="text/javascript" language="javascript" src="/Public/Home/js/wnl_jsq.js"></script>
+	<link rel="stylesheet" href="/Public/Home/css/wnl.css?v=201912171511">
+	<link rel="stylesheet" type="text/css" href="/Public/Home/css/index_wannianli.css?v=201810081435">
+	<script type="text/javascript">
+        //高考倒计时
+        function getRTime(){
+            var EndTime= new Date("2020/12/19 00:00:00"); //截止时间
+            var NowTime = new Date();
+            var t =EndTime.getTime() - NowTime.getTime();
+            var d=Math.floor(t/1000/60/60/24);
+            var h=Math.floor(t/1000/60/60%24);
+            var m=Math.floor(t/1000/60%60);
+            var s=Math.floor(t/1000%60);
+
+            document.getElementById("t_d").innerHTML = d + " 天";
+            document.getElementById("t_h").innerHTML = h + " 时";
+            document.getElementById("t_m").innerHTML = m + " 分";
+            document.getElementById("t_s").innerHTML = s + " 秒";
+            var EndTime1= new Date("2020/06/13 00:00:00"); //截止时间
+            var t1 =EndTime1.getTime() - NowTime.getTime();
+            var d1=Math.floor(t1/1000/60/60/24);
+            var h1=Math.floor(t1/1000/60/60%24);
+            var m1=Math.floor(t1/1000/60%60);
+            var s1=Math.floor(t1/1000%60);
+
+            document.getElementById("t1_d").innerHTML = d1 + " 天";
+            document.getElementById("t1_h").innerHTML = h1 + " 时";
+            document.getElementById("t1_m").innerHTML = m1 + " 分";
+            document.getElementById("t1_s").innerHTML = s1 + " 秒";
+        }
+        setInterval(getRTime,1000);
+	</script>
+</head>
+<body>
+<div class="live">
+    <!-- head搜索 -->
+    <div class='head_main'>
+        <div class='head'>
+        </div>
+    </div>
+</div>
+<!--内容开始-->
+<div class="main">
+	<div class="container">
+		<div class="right">
+			<!--高考倒计时开始-->
+			<div class="time1 timeActive">
+				<h1>2021年考研倒计时</h1>
+				<h3>2021年全国硕士研究生初试时间预测：2020年12月19日 星期六 农历十一月初五。</h3>
+                <h3>考试日期为12月19日-12月20日（超过3小时的考试科目在12月21日进行）</h3>
+                <h3>目前距离2020年考研还有</h3>
+				<h1><DIV id="CountMsg" class="HotDate">
+					<span id="t_d">00 天</span>
+					<span id="t_h">00 时</span>
+					<span id="t_m">00 分</span>
+					<span id="t_s">00 秒</span>
+                </DIV></h1>
+                
+				<h1>2020年上半年全国大学英语四、六级倒计时</h1>
+				<h3>2020年上半年全国大学英语四、六级考试时间：2020年06月13日 星期六 农历闰四月廿二</h3>
+				<h3>目前距离2020年大学英语四、六级考试还有</h3>
+				<h1><DIV id="CountMsg" class="HotDate">
+					<span id="t1_d">00 天</span>
+					<span id="t1_h">00 时</span>
+					<span id="t1_m">00 分</span>
+					<span id="t1_s">00 秒</span>
+				</DIV></h1>
+			</div>
+		</div>
+		<div class="clearfloat"></div>
+	</div>
+</div>
+<!--内容结束-->
+</body>
+
+</html>
